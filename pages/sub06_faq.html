@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="discription" content="한국교육학술정보원">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지방교육재정알리미</title>
+  <link href="../img/favicon.ico" rel="icon" type="img/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="nav">
+      <button type="button" class="nav_close"><span></span><span></span></button>
+      <ul class="nav_wrap">
+        <li>
+          <h2>지방교육재정</h2>
+          <ul>
+            <li><a href="./sub01_introduce.html">알리미 소개</a></li>
+            <li><a href="#">예산공시</a></li>
+            <li><a href="#">결산공시</a></li>
+            <li><a href="#">맞춤형 검색</a></li>
+            <li><a href="#">지방교육재정추이</a>
+              <ul class="nav_sub">
+                <li><a href="#">교육비특별회계세입</a></li>
+                <li><a href="#">교육비특별회계세출</a></li>
+              </ul>
+            </li>
+            <li><a href="#">일일수입지출현황</a>
+              <ul class="nav_sub">
+                <li><a href="#">교육비특별회계수입</a></li>
+                <li><a href="#">교육비특별회계지출</a></li>
+                <li><a href="#">조기집행현황</a></li>
+              </ul>
+            </li>
+            <li><a href="#">특별교부금</a>
+              <ul class="nav_sub">
+                <li><a href="#">총괄</a></li>
+                <li><a href="#">국가시책사업</a></li>
+                <li><a href="#">지역교육현안사업</a></li>
+                <li><a href="#">재해대책사업</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>알기쉬운재정</h2>
+          <ul>
+            <li><a href="#">그림으로 보는 재정</a>
+              <ul class="nav_sub">
+                <li><a href="#">테마통계</a></li>
+                <li><a href="#">인포그래픽</a></li>
+                <li><a href="#">시각화정보</a></li>
+              </ul>
+            </li>
+            <li><a href="#">지방교육재정학교</a>
+              <ul class="nav_sub">
+                <li><a href="#">지방교육재정배움교실</a></li>
+                <li><a href="#">어린이 재정배움교실</a></li>
+                <li><a href="#">재정웹툰</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>학교정보</h2>
+          <ul>
+            <li><a href="./sub03_schoolChart.html">신설예정학교</a>
+              <ul class="nav_sub">
+                <li><a href="./sub03_schoolChart.html">현황</a></li>
+                <li><a href="#">상세정보</a></li>
+              </ul>
+            </li>
+            <li><a href="#">폐교정보</a>
+              <ul class="nav_sub">
+                <li><a href="#">현황</a></li>
+                <li><a href="#">상세정보</a></li>
+              </ul>
+            </li>
+            <li><a href="#">학교일반현황</a>
+              <ul class="nav_sub">
+                <li><a href="#">상제정보</a></li>
+                <li><a href="#">학교간비교</a></li>
+              </ul>
+            </li>
+            <li><a href="#">일반교육통계</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>교육청재정</h2>
+          <ul>
+            <li><a href="#">교육처별 재정도표</a></li>
+            <li><a href="#">교육청재정</a></li>
+            <li><a href="#">교육청 조직분석</a></li>
+            <li><a href="#">주민참여예산제도</a></li>
+            <li><a href="#">예산낭비신고</a></li>
+            <li><a href="#">불법찬조금 신고센터</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>자료실</h2>
+          <ul>
+            <li><a href="./sub05_data.html">재정운영</a></li>
+            <li><a href="./sub05_report.html">재정보고서</a></li>
+            <li><a href="#">재정법령</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>참여·소통</h2>
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="./sub06_faq.html">FAQ</a></li>
+            <li><a href="./join.html" class="qna_btn">Q&A</a></li>
+            <li><a href="#">뉴스레터</a></li>
+            <li><a href="#">개방공간</a>
+              <ul class="nav_sub">
+                <li><a href="#">테이터셋</a></li>
+                <li><a href="#">OpenAPI</a></li>
+                <li><a href="#">개방정보주기표</a></li>
+                <li><a href="#">개발자공간</a></li>
+                <li><a href="#">마이페이지</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <header class="header">
+      <div class="header_row">
+        <div class="inner top">
+          <h6>재정용어</h6>
+          <div><span>Language</span>
+            <ul class="s_drop">
+              <li>Korea</li>
+              <li>English</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header_row">
+        <div class="inner cen">
+          <div class="logo"><a href="../index.html"><img src="../img/header/logo.jpg" alt="logo"></a></div>
+          <div class="left">
+            <form>
+              <input type="text" placeholder="검색어를 입력하세요."><button type="button" class="search_btn"></button>
+            </form>
+            <div class="sites">
+              <button type="button" class="nav_btn"><span></span><span></span><span></span></button>
+              <a href="#"><img src="../img/header/edufine.jpg" alt="edufine"></a>
+              <a href="#"><img src="../img/header/symbol.jpg" alt="symbol"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_row">
+        <div class="inner bttm">
+          <div class="gnb_tmenu">
+            <ul>
+              <li class="t_title"><a href="./sub01_introduce.html">지방교육재정</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg1">
+                      <h5>지방교육재정</h5>
+                      <p>주요 지방교육재정에 관한 정보를 제공합니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="./sub01_introduce.html">알리미 소개</a></li>
+                        <li><a href="#">예산공시</a></li>
+                        <li><a href="#">결산공시</a></li>
+                        <li><a href="#">맞춤형 검색</a></li>
+                        <li><a href="#" class="sub_ar">지방교육재정추이</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">교육비특별회계세입</a></li>
+                            <li><a href="#">교육비특별회계세출</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="sub_ar">일일수입지출현황</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">교육비특별회계수입</a></li>
+                            <li><a href="#">교육비특별회계지출</a></li>
+                            <li><a href="#">조기집행현황</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="sub_ar">특별교부금</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">총괄</a></li>
+                            <li><a href="#">국가시책사업</a></li>
+                            <li><a href="#">지역교육현안사업</a></li>
+                            <li><a href="#">재해대책사업</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="t_title"><a href="#">알기쉬운재정</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg2">
+                      <h5>알기쉬운재정</h5>
+                      <p>지방교육재정에 대한 쉽고 재미있는 설명자료를 제공합니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="#" class="sub_ar">그림으로 보는 재정</a>
+                          <ul class="s_s_title">
+                            <li><a href="#" class="sub_ar">테마통계</a></li>
+                            <li><a href="#">인포그래픽</a></li>
+                            <li><a href="#">시각화정보</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="sub_ar">지방교육재정학교</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">지방교육재정배움교실</a></li>
+                            <li><a href="#">어린이 재정배움교실</a></li>
+                            <li><a href="#">재정웹툰</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="t_title"><a href="./sub03_schoolChart.html">학교정보</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg3">
+                      <h5>학교정보</h5>
+                      <p>학교의 과거-현재-미래에 대한 정보를 제공합니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="./sub03_schoolChart.html" class="sub_ar">신설예정학교</a>
+                          <ul class="s_s_title">
+                            <li><a href="./sub03_schoolChart.html">현황</a></li>
+                            <li><a href="#">상세정보</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="sub_ar">폐교정보</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">현황</a></li>
+                            <li><a href="#">상세정보</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="sub_ar">학교일반현황</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">상세정보</a></li>
+                            <li><a href="#">학교간비교</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">일반교육통계</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="t_title"><a href="#">교육청재정</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg4">
+                      <h5>교육청재정</h5>
+                      <p>17개 시·도교육청의 재정정보를 제공합니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="#">교육처별 재정도표</a></li>
+                        <li><a href="#">교육청재정</a></li>
+                        <li><a href="#">교육청 조직분석</a></li>
+                        <li><a href="#">주민참여예산제도</a></li>
+                        <li><a href="#">예산낭비신고</a></li>
+                        <li><a href="#">불법찬조금 신고센터</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="t_title"><a href="./sub05_data.html">자료실</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg5">
+                      <h5>자료실</h5>
+                      <p>지방교육재정 운영과 관련된 규정과 보고서를 제공합니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="./sub05_data.html">재정운영</a></li>
+                        <li><a href="./sub05_report.html">재정보고서</a></li>
+                        <li><a href="#">재정법령</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="t_title"><a href="#">참여·소통</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg6">
+                      <h5>참여·소통</h5>
+                      <p>참여와 소통의 공간입니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="./sub06_faq.html">FAQ</a></li>
+                        <li><a href="./join.html" class="qna_btn">Q&A</a></li>
+                        <li><a href="#">뉴스레터</a></li>
+                        <li><a href="#" class="sub_ar">개방공간</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">테이터셋</a></li>
+                            <li><a href="#">OpenAPI</a></li>
+                            <li><a href="#">개방정보주기표</a></li>
+                            <li><a href="#">개발자공간</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="sub_top">
+        <div class="sitemaps">
+          <div class="sitemap_txt">
+            <a href="../index.html" class="home"></a>
+            <p>참여·소통</p>
+            <p>FAQ</p>
+          </div>
+        </div>
+        <div class="title common c_s6">
+          <div class="bg"></div>
+          <p>참여와 소통의 공간입니다.</p>
+          <h2>참여·소통</h2>
+        </div>
+      </div>
+      <div class="sub_main">
+        <div class="container">
+          <div class="con_title">
+            <h6>FAQ</h6>
+          </div>
+          <div class="sub_items si6_1 tb_top">
+            <div class="search_box">
+              <form>
+                <input type="text" placeholder="검색어를 입력하세요.">
+                <button type="button" class="search_btn">검색</button>
+              </form>
+            </div>
+          </div>
+          <div class="sub_items si6_2">
+            <table class="board">
+              <thead>
+                <tr>
+                  <th>번호</th>
+                  <th>제목</th>
+                  <th>분류</th>
+                </tr>
+              </thead>
+              <tbody class="accordion_body">
+                <tr class="accordion_click">
+                  <td>9</td>
+                  <td>17개 시도교육청 폐교 활용에 관한 상세 정보 요청 안내</td>
+                  <td>자료문의</td>
+                </tr>
+                <tr class="accordion">
+                  <td colspan="3">
+                    <p class="info_top">
+                      안녕하세요. 지방교육재정알리미 운영 담당자입니다.<br />
+                      폐교 활용에 관한 상세 정보를 얻으시기 위해서는,<br />
+                      아래의 17개 시도교육청 폐교재산 관련 담당자에게 문의해 주시기 바랍니다.
+                    </p>
+                    <div class="info_box">
+                      <p>
+                        1. 서울교육청_교육재정과(02-3999-642)<br />
+                        2. 부산교육청_재정과(051-860-0751)<br />
+                        3. 대구교육청_학교운영과(053-231-0726)<br />
+                        4. 인천교육청_교육재정과(032-420-6589)<br />
+                        5. 광주교육청_재정복지과(062-380-4148)<br />
+                        6. 대전교육청_재정과(042-616-8713)<br />
+                        7. 울산교육청_교육여건개선과(052-210-5962)<br />
+                        8. 세종교육청_행정지원과(044-320-3211)<br />
+                        9. 경기교육청_재무담당관(031-249-0423)<br />
+                        10. 강원교육청_행정과(033-258-5482)<br />
+                        11. 충북교육청_재무과(043-290-2594)<br />
+                        12. 충남교육청_재무과(041-640-8222)<br />
+                        13. 전북교육청_재무과(063-239-3605)<br />
+                        14. 전남교육청_재정과(061-260-0898)<br />
+                        15. 경북교육청_재무정보과(054-805-3815)<br />
+                        16. 경남교육청_재정복지과(055-268-1483)<br />
+                        17. 제주교육청_교육재정과(064-710-0751)<br />
+                      </p>
+                    </div>
+                    <p class="info_bottom">
+                      지방교육재정알리미에서 제공하는 정보에 대한 관심에 다시 한번 감사드립니다.
+                    </p>
+                  </td>
+                </tr>
+                <tr class="accordion_click">
+                  <td>8</td>
+                  <td>회원탈퇴를 하고 싶습니다.</td>
+                  <td>사용법문의</td>
+                </tr>
+                <tr class="accordion">
+                  <td colspan="3">
+                    <p class="info_top">
+                      지방교육재정알리미에 로그인 한 후 <strong>'참여·소통 > 개방공간 > 마이페이지 > 회원탈퇴'</strong> 메뉴에서 회원탈퇴를 하실 수 있습니다.<br>
+                      회원탈퇴 후에는 이전 상태로 복구가 불가능하오니 유의하시기 바랍니다.
+                    </p>
+                  </td>
+                </tr>
+                <tr class="accordion_click">
+                  <td>7</td>
+                  <td>지방교육재정알리미 서비스가 중지될 수 있나요?</td>
+                  <td>자료문의</td>
+                </tr>
+                <tr class="accordion">
+                  <td colspan="3">
+                    <p class="info_top">
+                      "공공데이터 제공 및 이용활성화에 관한 법률" 제36조에 따라, 시스템 장비 이관 등 부득이한 사유로 제공 중인 서비스가 중지될 수 있습니다.<br />
+                      관련 조항은 다음과 같습니다.
+                    </p>
+                    <div class="info_box">
+                      <p>
+                        제36조(면책)<br />
+                        ① 공공데이터의 제공에 관하여 해당 공공기관과 그 소속의 공무원 및 임직원은 공공데이터의 품질(고의 또는 중대한 과실이 있는 경우는 제외한다),
+                        제20조에 따른 공공데이터 목록의 제외, 제28조에 따른 공공데이터 제공중단 및 업무상 사유의 공공데이터 일시적 제공중단 등으로 인하여 이용자 또는 제3자에게
+                        발생한 손해에 대하여 민사상·형사상의 책임을 지지 아니한다.<br />
+                        ② 해당 공무원 또는 임직원은 이 법에 따른 절차에 따라 성실히 직무에 임한 경우에는 「국가공무원법」 및 그 밖의 법령에 따른 불이익처분을 받지 아니한다.<br />
+                        ③ 제3자의 권리가 포함된 공공데이터가 제공된 경우 이를 이용한 자는 진정한 권리자에게 발생한 손해에 대하여 책임을 지지 아니한다. 다만, 사전에 제3자의 권리가 포함된
+                        사실을 인지하고 이용한 자는 제외한다.<br />
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="accordion_click">
+                  <td>6</td>
+                  <td>활용사례를 등록했는데 게시가 되지 않습니다.</td>
+                  <td>사용법문의</td>
+                </tr>
+                <tr class="accordion">
+                  <td colspan="3">
+                    <p class="info_top">
+                      지방교육재정알리미에서 제공하는 다양한 정보를 활용한 논문, 생활수기, 어플리케이션, 웹 사이트, 인포그래픽 등 다양한 활용사례를 국민 누구나 공유할 수 있도록 활용사례
+                      등록기능을 제공하고 있습니다.<br>
+                      다만, 활용사례는 상업성이나 유용성 여부를 관리자가 검토·승인한 후 등록하도록 되어 있어 바로 게시되지 않을 수 있습니다.<br>
+                      활용사례를 등록 후 연락(eduinfo@keris.or.kr) 주십시오.
+                    </p>
+                  </td>
+                </tr>
+                <tr class="accordion_click">
+                  <td>5</td>
+                  <td>지방교육재정알리미 홈페이지에 공개된 데이터는 상업적 이용이 가능한가요?</td>
+                  <td>사용법문의</td>
+                </tr>
+                <tr class="accordion">
+                  <td colspan="3">
+                    <p class="info_top">
+                      공공데이터 또는 오픈 API 로 제공되는 공공기관의 정보는<br />
+                      특별한 사유가 존재하지 않는 한 공공데이터법에 의해 모두 상업적 이용이 가능합니다.
+                    </p>
+                    <div class="info_box">
+                      <p>
+                        공공데이터 제공 및 이용 활성화에 관한 법률(약칭 : 공공데이터법)<br>
+                        제3조(정의)<br>
+                        ① 공공기관은 누구든지 공공데이터를 편리하게 이용할 수 있도록 노력하여야 하며, 이용권의 보편적 확대를 위하여 필요한 조치를 취하여야 한다.<br>
+                        ② 공공기관은 공공데이터에 관한 국민의 접근과 이용에 있어서 평등의 원칙을 보장하여야 한다.<Br>
+                        ③ 공공기관은 정보통신망을 통하여 일반에 공개된 공공데이터에 관하여 제28조 제1항 각 호의 경우를 제외하고는 이용자의 접근제한이나 차단 등 이용저해행위를 하여서는 아니
+                        된다.<br>
+                        ④ 공공기관은 다른 법률에 특별한 규정이 있는 경우또는 제28조 제1항 각 호의 경우를 제외하고는 공공데이터의 영리적 이용인 경우에도 이를 금지 또는 제한하여서는 아니
+                        된다.<br>
+                        ⑤ 이용자는 공공데이터를 이용하는 경우 국가안전보장 등 공익이나 타인의 권리를 침해하지 아니하도록 법령이나 이용조건 등에 따른 의무를 준수하여야 하며, 신의에 따라 성실하게
+                        이용하여야 한다.<br>
+                      </p>
+                      <p>
+                        제28조(공공데이터의제공중단) ① 공공기관의 장은 다은 각 호의 어느 하나에 해당하는 경우 공공데이터의 제공을 중단할 수 있다.<br>
+                        1. 이용자가 제19조에 따라 공표된 공공데이터의 이용요건을 위반하여 공공기관 본래의 업무수행에 상당한 지장을 초래할 우려가 있는 경우<br>
+                        2. 공공데이터의 이용이 제3자의 권리를 현저하게 침해하는 경우<br>
+                        3. 공공데이터를 범죄 등의 불법행위에 악용하는 경우
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="accordion_click">
+                  <td>4</td>
+                  <td>Open API 활용은 어떻게 하나요?</td>
+                  <td>사용법문의</td>
+                </tr>
+                <tr class="accordion">
+                  <td colspan="3">
+                    <p class="info_top">
+                      지방교육재정알리미 Open API 는 교육부의 다양한 서비스와 데이터를 쉽게 이용할 수 있도록 공개한 인터페이스입니다.
+                      <br><br>
+                      Open API 를 이용하는 방법은 다음과 같습니다.
+                      <br><br>
+                      1. 지방교육재정알리미 로그인(이용자 계정이 없으면 회원 가입)<br>
+                      2. 인증키 신청 (최초 1회만 신청하면 됩니다)<br>
+                      3. 지방교육재정알리미에서 이용하고자 하는 서비스 검색 및 이용방법 확인<br>
+                      4. 어플리케이션 제작 및 배포 이용방법에 대해 세부적으로 알아보겠습니다.
+                    </p>
+                    <div class="info_box">
+                      <p>
+                        Open API호출을 위해서는 요청주소 및 요청인자를 파악해야 합니다.<br>
+                        해당 정보는 서비스별 Open API 메타 정보 화면에서 확인이 가능합니다.
+                        <br><br>
+                        가. 입력인자 및 호출 URL 확인 호출 URL은 기본적으로 다음과 같은 항목으로 구성되어 있으며 GET방식으로 호출하시면 됩니다.<br>
+                        (브라우저에서 호출URL을 입력하시면 쉽게 확인이 가능합니다)
+                        <br>
+                        http://요청주소?requestType=호출서비스명&key=인증키&type=요청파일타입&pIndex=페이지위치&pSize=요청숫자
+                        <br>
+                        ■ 요청주소 : OpenAPI서비스에서 요청주소를 확인합니다.<br>
+                        ■ 인증키 : 신청한 인증키(sample 키는 최초5건 이내에서만 호출 가능함. 정식 서비스를 위해서는 인증키 발급 필수)<br>
+                        ■ 요청파일타입 : Open API 호출 결과물의 파일 형태를 지정합니다. (xml, json 중 택 일)<br>
+                        ■ OpenAPI 호출서비스명 : 각 Open API 별로 고유한 영문서비스명을 제공합니다. (요청인자 3번째 항목)<br>
+                        ■ 페이지위치 : 호출하고자 하는 데이터 목록의 시작위치 <br>
+                        ■ 요청숫자 : 호출하고자 하는 데이터 수
+                        <br><br>
+                        필수 검색어는 반드시 입력하셔야 하며, 선택 검색어는 입력하지 않아도 되지만<br>
+                        다음 검색항목이 있는 경우 반드시 공백을 입력하셔야 정상 검색이 됩니다.
+                        <br>
+                        나. 출력값 및 에러 메시지 확인<br>
+                        ■ 출력 값(Out Result) : 출력 컬럼 확인<br>
+                        ■ 에러 및 정보 메시지 : 출력 오류에 대한 메시지 확인
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="accordion_click">
+                  <td>3</td>
+                  <td>문의를 하려면 어떻게 하나요?</td>
+                  <td>사용법문의</td>
+                </tr>
+                <tr class="accordion">
+                  <td colspan="3">
+                    <p class="info_top">
+                      공시정보 오류신고 및 서비스 개선요청, 이용문의 등 지방교육재정알리미 서비스 이용 시 문의사항은<br>
+                      지방교육재정알리미 담당자(eduinfo@keris.or.kr)에게 연락주시면 답변을 드리고 있습니다.<br>
+                      또는 참여소통 Q&A 메뉴를 활용하여 등록하시면,<br>
+                      담당자가 확인 후 신속하게 메일로 답변을 드리도록 하겠습니다.
+                    </p>
+                  </td>
+                </tr>
+                <tr class="accordion_click">
+                  <td>2</td>
+                  <td>회원가입 방법은 어떻게 되나요?</td>
+                  <td>사용법문의</td>
+                </tr>
+                <tr class="accordion">
+                  <td colspan="3">
+                    <p class="info_top">
+                      지방교육재정알리미 회원가입은 SNS계정을 활용하여 가입하실 수 있습니다.<br>
+                      이용약관 및 개인정보수집 동의 후 최소한의 회원정보(닉네임)를 등록하시면 회원가입이 완료됩니다.
+                    </p>
+                  </td>
+                </tr>
+                <tr class="accordion_click">
+                  <td>1</td>
+                  <td>회원가입은 꼭 해야 하나요?</td>
+                  <td>사용법문의</td>
+                </tr>
+                <tr class="accordion">
+                  <td colspan="3">
+                    <p class="info_top">
+                      지방교육재정알리미는 회원가입 여부와 상관없이 모든 서비스의 이용이 가능합니다.<br>
+                      다만, OpenAPI 인증키 발급, 개발자게시판, 활용사례 등록 등은 더 나은 서비스를 위해 회원가입이 필요한 서비스 입니다.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer" class="sub_pages">
+      <div class="footer_rows">
+        <div class="f_top">
+          <ul>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">저작권동의방침</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+          <button type="button" class="top_btn">TOP</button>
+        </div>
+      </div>
+      <div class="footer_rows">
+        <div class="f_bottom">
+          <div class="f_logo"></div>
+          <ul class="f_text">
+            <li>(30119) 세종특별시 갈매로 408 정부세종청사 14동 교육부</li>
+            <li>문의처 : eduinfo@keris.or.kr (공시오류신고 및 문의)<span>Q&A등록</span>문의시간 : 09:00~18:00 (월~금)</li>
+            <li>© Ministry of Education All Rights Reserved.</li>
+          </ul>
+          <div class="f_keris"></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/plugins/prefixfree.min.js"></script>
+  <script src="../js/plugins/jquery.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/subPages.js"></script>
+</body>
+
+</html>

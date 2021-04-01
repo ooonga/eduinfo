@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="discription" content="한국교육학술정보원">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지방교육재정알리미</title>
+  <link href="./img/favicon.ico" rel="icon" type="img/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/jquery.fullpage.css" rel="stylesheet">
+</head>
+
+<body id="main" class="main">
+  <div id="wrap">
+    <div id="nav">
+      <button type="button" class="nav_close"><span></span><span></span></button>
+      <ul class="nav_wrap">
+        <li>
+          <h2>지방교육재정</h2>
+          <ul>
+            <li><a href="./pages/sub01_introduce.html">알리미 소개</a></li>
+            <li><a href="#">예산공시</a></li>
+            <li><a href="#">결산공시</a></li>
+            <li><a href="#">맞춤형 검색</a></li>
+            <li><a href="#">지방교육재정추이</a>
+              <ul class="nav_sub">
+                <li><a href="#">교육비특별회계세입</a></li>
+                <li><a href="#">교육비특별회계세출</a></li>
+              </ul>
+            </li>
+            <li><a href="#">일일수입지출현황</a>
+              <ul class="nav_sub">
+                <li><a href="#">교육비특별회계수입</a></li>
+                <li><a href="#">교육비특별회계지출</a></li>
+                <li><a href="#">조기집행현황</a></li>
+              </ul>
+            </li>
+            <li><a href="#">특별교부금</a>
+              <ul class="nav_sub">
+                <li><a href="#">총괄</a></li>
+                <li><a href="#">국가시책사업</a></li>
+                <li><a href="#">지역교육현안사업</a></li>
+                <li><a href="#">재해대책사업</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>알기쉬운재정</h2>
+          <ul>
+            <li><a href="#">그림으로 보는 재정</a>
+              <ul class="nav_sub">
+                <li><a href="#">테마통계</a></li>
+                <li><a href="#">인포그래픽</a></li>
+                <li><a href="#">시각화정보</a></li>
+              </ul>
+            </li>
+            <li><a href="#">지방교육재정학교</a>
+              <ul class="nav_sub">
+                <li><a href="#">지방교육재정배움교실</a></li>
+                <li><a href="#">어린이 재정배움교실</a></li>
+                <li><a href="#">재정웹툰</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>학교정보</h2>
+          <ul>
+            <li><a href="./pages/sub03_schoolChart.html">신설예정학교</a>
+              <ul class="nav_sub">
+                <li><a href="./pages/sub03_schoolChart.html">현황</a></li>
+                <li><a href="#">상세정보</a></li>
+              </ul>
+            </li>
+            <li><a href="#">폐교정보</a>
+              <ul class="nav_sub">
+                <li><a href="#">현황</a></li>
+                <li><a href="#">상세정보</a></li>
+              </ul>
+            </li>
+            <li><a href="#">학교일반현황</a>
+              <ul class="nav_sub">
+                <li><a href="#">상제정보</a></li>
+                <li><a href="#">학교간비교</a></li>
+              </ul>
+            </li>
+            <li><a href="#">일반교육통계</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>교육청재정</h2>
+          <ul>
+            <li><a href="#">교육처별 재정도표</a></li>
+            <li><a href="#">교육청재정</a></li>
+            <li><a href="#">교육청 조직분석</a></li>
+            <li><a href="#">주민참여예산제도</a></li>
+            <li><a href="#">예산낭비신고</a></li>
+            <li><a href="#">불법찬조금 신고센터</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>자료실</h2>
+          <ul>
+            <li><a href="./pages/sub05_data.html">재정운영</a></li>
+            <li><a href="./pages/sub05_report.html">재정보고서</a></li>
+            <li><a href="#">재정법령</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>참여·소통</h2>
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="./pages/sub06_faq.html">FAQ</a></li>
+            <li><a href="./pages/join.html" class="qna_btn">Q&A</a></li>
+            <li><a href="#">뉴스레터</a></li>
+            <li><a href="#">개방공간</a>
+              <ul class="nav_sub">
+                <li><a href="#">테이터셋</a></li>
+                <li><a href="#">OpenAPI</a></li>
+                <li><a href="#">개방정보주기표</a></li>
+                <li><a href="#">개발자공간</a></li>
+                <li><a href="#">마이페이지</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <header class="header">
+      <div class="header_row">
+        <div class="inner top">
+          <h6>재정용어</h6>
+          <div><span>Language</span>
+            <ul class="s_drop">
+              <li>Korea</li>
+              <li>English</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header_row">
+        <div class="inner cen">
+          <div class="logo"><a href="./index.html"><img src="./img/header/logo.jpg" alt="logo"></a></div>
+          <div class="left">
+            <form>
+              <input type="text" placeholder="검색어를 입력하세요." autocomplete=off><button type="button"
+                class="search_btn"></button>
+            </form>
+            <div class="sites">
+              <button type="button" class="nav_btn"><span></span><span></span><span></span></button>
+              <a href="#"><img src="./img/header/edufine.jpg" alt="edufine"></a>
+              <a href="#"><img src="./img/header/symbol.jpg" alt="symbol"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_row">
+        <div class="inner bttm">
+          <div class="gnb_tmenu">
+            <ul>
+              <li class="t_title"><a href="./pages/sub01_introduce.html">지방교육재정</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg1">
+                      <h5>지방교육재정</h5>
+                      <p>주요 지방교육재정에 관한 정보를 제공합니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="./pages/sub01_introduce.html">알리미 소개</a></li>
+                        <li><a href="#">예산공시</a></li>
+                        <li><a href="#">결산공시</a></li>
+                        <li><a href="#">맞춤형 검색</a></li>
+                        <li><a href="#" class="sub_ar">지방교육재정추이</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">교육비특별회계세입</a></li>
+                            <li><a href="#">교육비특별회계세출</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="sub_ar">일일수입지출현황</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">교육비특별회계수입</a></li>
+                            <li><a href="#">교육비특별회계지출</a></li>
+                            <li><a href="#">조기집행현황</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="sub_ar">특별교부금</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">총괄</a></li>
+                            <li><a href="#">국가시책사업</a></li>
+                            <li><a href="#">지역교육현안사업</a></li>
+                            <li><a href="#">재해대책사업</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="t_title"><a href="#">알기쉬운재정</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg2">
+                      <h5>알기쉬운재정</h5>
+                      <p>지방교육재정에 대한 쉽고 재미있는 설명자료를 제공합니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="#" class="sub_ar">그림으로 보는 재정</a>
+                          <ul class="s_s_title">
+                            <li><a href="#" class="sub_ar">테마통계</a></li>
+                            <li><a href="#">인포그래픽</a></li>
+                            <li><a href="#">시각화정보</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="sub_ar">지방교육재정학교</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">지방교육재정배움교실</a></li>
+                            <li><a href="#">어린이 재정배움교실</a></li>
+                            <li><a href="#">재정웹툰</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="t_title"><a href="./pages/sub03_schoolChart.html">학교정보</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg3">
+                      <h5>학교정보</h5>
+                      <p>학교의 과거-현재-미래에 대한 정보를 제공합니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="./pages/sub03_schoolChart.html" class="sub_ar">신설예정학교</a>
+                          <ul class="s_s_title">
+                            <li><a href="./pages/sub03_schoolChart.html">현황</a></li>
+                            <li><a href="#">상세정보</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="sub_ar">폐교정보</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">현황</a></li>
+                            <li><a href="#">상세정보</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="sub_ar">학교일반현황</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">상세정보</a></li>
+                            <li><a href="#">학교간비교</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">일반교육통계</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="t_title"><a href="#">교육청재정</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg4">
+                      <h5>교육청재정</h5>
+                      <p>17개 시·도교육청의 재정정보를 제공합니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="#">교육처별 재정도표</a></li>
+                        <li><a href="#">교육청재정</a></li>
+                        <li><a href="#">교육청 조직분석</a></li>
+                        <li><a href="#">주민참여예산제도</a></li>
+                        <li><a href="#">예산낭비신고</a></li>
+                        <li><a href="#">불법찬조금 신고센터</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="t_title"><a href="./pages/sub05_data.html">자료실</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg5">
+                      <h5>자료실</h5>
+                      <p>지방교육재정 운영과 관련된 규정과 보고서를 제공합니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="./pages/sub05_data.html">재정운영</a></li>
+                        <li><a href="./pages/sub05_report.html">재정보고서</a></li>
+                        <li><a href="#">재정법령</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="t_title"><a href="#">참여·소통</a>
+                <div class="gnb_smenu">
+                  <div class="s_box">
+                    <div class="s_left bg6">
+                      <h5>참여·소통</h5>
+                      <p>참여와 소통의 공간입니다.</p>
+                    </div>
+                    <div class="s_right">
+                      <ul class="s_title">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="./pages/sub06_faq.html">FAQ</a></li>
+                        <li><a href="./pages/join.html" class="qna_btn">Q&A</a></li>
+                        <li><a href="#">뉴스레터</a></li>
+                        <li><a href="#" class="sub_ar">개방공간</a>
+                          <ul class="s_s_title">
+                            <li><a href="#">테이터셋</a></li>
+                            <li><a href="#">OpenAPI</a></li>
+                            <li><a href="#">개방정보주기표</a></li>
+                            <li><a href="#">개발자공간</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="fullpage">
+      <section id="page1" class="section">
+        <div class="section_wrap">
+          <div class="box_wrap">
+            <div class="title_box st1">
+              <p>지방교육재정의 쓰임새를 쉽고 편리하게 파악할 수 있는</p>
+              <h2>지방교육재정알리미</h2>
+            </div>
+            <div class="data_box">
+              <div class="d_items">
+                <div class="items d5">
+                  <h5>세입결산액</h5>
+                  <div class="num icon1">
+                    <p><span class="counter">87</span>조</p>
+                  </div>
+                  <p>2019회계연도</p>
+                </div>
+                <div class="items d5">
+                  <h5>세출결산액</h5>
+                  <div class="num icon2">
+                    <p><span class="counter">80</span>조</p>
+                  </div>
+                  <p>2019회계연도</p>
+                </div>
+                <div class="items d5">
+                  <h5>신설예정학교</h5>
+                  <div class="num icon3">
+                    <p><span class="counter">113</span>개</p>
+                  </div>
+                  <p>2020.5.1.기준</p>
+                </div>
+                <div class="items d5">
+                  <h5>폐교재산현황</h5>
+                  <div class="num icon4">
+                    <p><span class="counter">2864</span>개</p>
+                  </div>
+                  <p>2020.5.1.기준</p>
+                </div>
+                <div class="items d5">
+                  <h5>부채현황</h5>
+                  <div class="num icon5">
+                    <p><span class="counter">7</span>조</p>
+                  </div>
+                  <p>2019회계연도</p>
+                </div>
+              </div>
+              <div class="d_items bttm">
+                <div class="items d1">
+                  <div class="news_box">
+                    <div class="n_notice">
+                      <p class="p1">알려드립니다</p>
+                      <p>한줄공지</p>
+                    </div>
+                    <div class="n_news">
+                      <a href="#">2020년 제11회 지방교육재정알리미 온라인 퀴즈대회 당첨자 발표 및 정답 안내</a>
+                      <a href="#">제1회 지방교육재정알리미 온라인 퀴즈대회 실시</a>
+                      <a href="#">2020년 하반기 사용자 만족도 조사 당첨자 발표</a>
+                      <a href="#">2020년 제10회 지방교육재정알리미 온라인 퀴즈대회 당첨자 발표 및 정답 안내</a>
+                      <a href="#">지방교육재정알리미 서비스 네트워크 향상 작업에 따른 서비스 중단 안내</a>
+                    </div>
+                  </div>
+                  <div class="btn_box">
+                    <button type="button" class="ar_up"></button>
+                    <button type="button" class="ar_down"></button>
+                    <div class="more">
+                      <a href="#" class="m_ar">더보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="page2" class="section">
+        <div class="section_wrap">
+          <div class="box_wrap">
+            <div class="data_box">
+              <div class="d_items">
+                <div class="items d6 bg1">
+                  <h5>예산공시</h5>
+                </div>
+                <div class="items d6 bg2">
+                  <h5>결산공시</h5>
+                </div>
+                <div class="items d6 bg3">
+                  <h5>맞춤형 검색</h5>
+                </div>
+                <div class="items d6 bg4">
+                  <h5>지방교육<br>재정추이</h5>
+                </div>
+                <div class="items d6 bg5">
+                  <h5>일일수입<br>지출현황</h5>
+                </div>
+                <div class="items d6 bg6">
+                  <h5>특별교부금</h5>
+                </div>
+              </div>
+              <div class="d_items bttm">
+                <div class="items d5_2">
+                  <h5>교육청별 재정도표</h5>
+                  <p>시·도 교육청의 재정상태를 정보를<br>확인 할 수 있습니다.</p>
+                </div>
+                <div class="items d5_1">
+                  <h5>교육청 재정</h5>
+                  <div class="list_box list1">
+                    <a href="#">교육청별 재정도표</a>
+                    <a href="#">교육청 재정</a>
+                    <a href="#">교육청 조직분석</a>
+                    <a href="#">주민참여예산제도</a>
+                    <a href="#">예산낭비신고</a>
+                  </div>
+                </div>
+                <div class="items d5_1">
+                  <h5>알기쉬운 재정</h5>
+                  <div class="list_box list2">
+                    <a href="#">그림으로 보는 재정</a>
+                    <a href="#">지방교육재정학교</a>
+                  </div>
+                </div>
+                <div class="items d5_1">
+                  <h5>학교정보</h5>
+                  <div class="list_box list3">
+                    <a href="#">학교 일반현황</a>
+                    <a href="#">신설예정 학교</a>
+                    <a href="#">폐교정보</a>
+                    <a href="#">일반교육 통계</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="page3" class="section">
+        <div class="section_wrap">
+          <div class="box_wrap">
+            <div class="title_box st3">
+              <h2>테마통계</h2>
+              <p>지방교육재정알리미에서 주요재정지표에 대한 시각화된 정보를 제공합니다.</p>
+            </div>
+            <div class="data_box">
+              <div class="d_items">
+                <div class="items d3 bg1">
+                  <h5>지방교육재정 살림살이</h5>
+                  <p>교육분야 예산 규모, 재원 및 쓰임새를<br>확인할 수 있습니다.</p>
+                  <a href="#" class="round_btn">상세보기</a>
+                </div>
+                <div class="items d3 bg2">
+                  <h5>재정 건전성</h5>
+                  <p>지방교육재정의 건전성을 확인할 수<br>있습니다.</p>
+                  <a href="#" class="round_btn">상세보기</a>
+                </div>
+                <div class="items d3 bg3">
+                  <h5>재정 효율성</h5>
+                  <p>지방교육재정의 효율성을 확인할 수<br>있습니다.</p>
+                  <a href="#" class="round_btn">상세보기</a>
+                </div>
+              </div>
+              <div class="d_items bttm">
+                <div class="items d3 bg4">
+                  <h5>학교 교육여건 개선</h5>
+                  <p>학교 신·증설 등 교육환경 개선을 위한<br>투자를 확인할 수 있습니다.</p>
+                  <a href="#" class="round_btn">상세보기</a>
+                </div>
+                <div class="items d3 bg5">
+                  <h5>학교로 지원하는 경비</h5>
+                  <p>공립학교 전출금과 사립학교 지원 경비를<br>확인할 수 있습니다.</p>
+                  <a href="#" class="round_btn">상세보기</a>
+                </div>
+                <div class="items d3 bg6">
+                  <h5>주요 교육활동 지원</h5>
+                  <p>주요 교육활동에 대한 투자를 확인할 수<br>있습니다.</p>
+                  <a href="#" class="round_btn">상세보기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="page4" class="section">
+        <div class="section_wrap">
+          <div class="box_wrap">
+            <div class="title_box st4">
+              <button type="button" class="on">인포그래픽</button>
+              <button type="button">뉴스레터</button>
+            </div>
+            <div class="data_box">
+              <div class="d_items">
+                <div class="items d4">
+                  <div class="img_box">
+                    <a href="#">
+                      <img src="./img/main/section4/thumb1_1.jpg" alt="news1">
+                      <span><i>View</i></span>
+                    </a>
+                  </div>
+                  <h1>지방교육재정의 이해-신설예정학교 및 폐교</h1>
+                  <p><span>인포그래픽</span>2020-12-22</p>
+                </div>
+                <div class="items d4">
+                  <div class="img_box">
+                    <a href="#">
+                      <img src="./img/main/section4/thumb1_2.jpg" alt="news1_2">
+                      <span><i>View</i></span>
+                    </a>
+                  </div>
+                  <h1>지방교육재정의 이해-세출</h1>
+                  <p><span>인포그래픽</span>2020-12-22</p>
+                </div>
+                <div class="items d4">
+                  <div class="img_box">
+                    <a href="#">
+                      <img src="./img/main/section4/thumb1_3.jpg" alt="news1_3">
+                      <span><i>View</i></span>
+                    </a>
+                  </div>
+                  <h1>지방교육재정의 이해-세입</h1>
+                  <p><span>인포그래픽</span>2020-12-22</p>
+                </div>
+                <div class="items d4">
+                  <div class="img_box">
+                    <a href="#">
+                      <img src="./img/main/section4/thumb1_4.jpg" alt="news1_4">
+                      <span><i>View</i></span>
+                    </a>
+                  </div>
+                  <h1>지방교육재정의 이해-교부금</h1>
+                  <p><span>인포그래픽</span>2020-12-22</p>
+                </div>
+              </div>
+              <div class="d_items bttm4">
+                <div class="items d4">
+                  <div class="img_box">
+                    <a href="#">
+                      <img src="./img/main/section4/thumb1_5.jpg" alt="news1_5">
+                      <span><i>View</i></span>
+                    </a>
+                  </div>
+                  <h1>지방교육재정의 이해-통합공시</h1>
+                  <p><span>인포그래픽</span>2021-01-14</p>
+                </div>
+                <div class="items d4">
+                  <div class="img_box">
+                    <a href="#">
+                      <img src="./img/main/section4/thumb1_6.jpg" alt="news1_6">
+                      <span><i>View</i></span>
+                    </a>
+                  </div>
+                  <h1>특별교부금 안내</h1>
+                  <p><span>인포그래픽</span>2020-08-13</p>
+                </div>
+                <div class="items d4">
+                  <div class="img_box">
+                    <a href="#">
+                      <img src="./img/main/section4/thumb1_7.jpg" alt="news1_7">
+                      <span><i>View</i></span>
+                    </a>
+                  </div>
+                  <h1>2020년도 예산기준 통합공시</h1>
+                  <p><span>인포그래픽</span>2020-04-21</p>
+                </div>
+                <div class="items d4">
+                  <div class="img_box">
+                    <a href="#">
+                      <img src="./img/main/section4/thumb1_8.jpg" alt="news1_8">
+                      <span><i>View</i></span>
+                    </a>
+                  </div>
+                  <h1>지방교육재정 운용 개선사례</h1>
+                  <p><span>인포그래픽</span>2020-04-02</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="page5" class="section">
+        <div class="section_wrap">
+          <div class="box_wrap">
+            <div class="title_box st4">
+              <p class="on">알리미·커뮤니티</p>
+            </div>
+            <div class="data_box">
+              <div class="d_items">
+                <div class="items sd5">
+                  <a href="#">제1회 지방교육재정알리미 온라인 퀴즈대회 실시</a>
+                  <p>2021-01-15</p>
+                </div>
+                <div class="items sd5">
+                  <a href="#">2020년 제 11회 지방교육재정알리미 온라인 퀴즈 대회</a>
+                  <p>2020-12-22</p>
+                </div>
+                <div class="items sd5">
+                  <a href="#">제 11회 지방교육재정알리미 온라인 퀴즈대회 실시</a>
+                  <p>2020-12-09</p>
+                </div>
+                <div class="items sd5">
+                  <a href="#">2020년 결산기준 통합공시 안내 (2020.12.07.)</a>
+                  <p>2020-12-07</p>
+                </div>
+                <div class="items sd5">
+                  <a href="#">2020년 하반기 사용자 만족도 조사 당첨자 발표</a>
+                  <p>2020-12-07</p>
+                </div>
+              </div>
+              <div class="d_items bttm">
+                <div class="items d6_2 bg1">
+                  <a href="#">뉴스레터 구독신청</a>
+                </div>
+                <div class="items d6_1 bg1">
+                  <a href="#">재정운영</a>
+                </div>
+                <div class="items d6_1 bg2">
+                  <a href="#">재정보고서</a>
+                </div>
+                <div class="items d6_2 bg2">
+                  <a href="#">지방교육재정알리미</a>
+                </div>
+              </div>
+              <div class="d_items bttm">
+                <div class="items d1">
+                  <div class="slider_box">
+                    <div class="slide_btn">
+                      <button type="button" class="move prev"></button>
+                      <button type="button" class="pause"></button>
+                      <button type="button" class="move next"></button>
+                    </div>
+                    <div class="slide_content">
+                      <ul>
+                        <li><img src="./img/main/section5/banner1.jpg" alt="b1"></li>
+                        <li><img src="./img/main/section5/banner2.jpg" alt="b2"></li>
+                        <li><img src="./img/main/section5/banner3.jpg" alt="b3"></li>
+                        <li><img src="./img/main/section5/banner4.jpg" alt="b4"></li>
+                        <li><img src="./img/main/section5/banner5.jpg" alt="b5"></li>
+                        <li><img src="./img/main/section5/banner6.jpg" alt="b6"></li>
+                        <li><img src="./img/main/section5/banner7.jpg" alt="b7"></li>
+                        <li><img src="./img/main/section5/banner8.jpg" alt="b8"></li>
+                        <li><img src="./img/main/section5/banner9.jpg" alt="b9"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="page6" class="section fp-auto-height">
+        <footer id="footer">
+          <div class="footer_rows">
+            <div class="f_top">
+              <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">저작권동의방침</a></li>
+                <li><a href="#">사이트맵</a></li>
+              </ul>
+              <button type="button" class="top_btn">TOP</button>
+            </div>
+          </div>
+          <div class="footer_rows">
+            <div class="f_bottom">
+              <div class="f_logo"></div>
+              <ul class="f_text">
+                <li>(30119) 세종특별시 갈매로 408 정부세종청사 14동 교육부</li>
+                <li>문의처 : eduinfo@keris.or.kr (공시오류신고 및 문의)<span>Q&A등록</span>문의시간 : 09:00~18:00 (월~금)</li>
+                <li>© Ministry of Education All Rights Reserved.</li>
+              </ul>
+              <div class="f_keris"></div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <div class="quick_search">
+      <form action="#" method="GET">
+        <label for="terms"></label>
+        <input type="text" id="terms" title="재정용어 검색어 입력" placeholder="재정용어를 검색해보세요." autocomplete=off>
+        <button type="button" class="search_btn1"><span class="blind">검색어를 입력하세요</span></button>
+      </form>
+    </div>
+    <div class="open_search">
+      <div class="top_title">
+        <p>재정용어 검색</p>
+        <button type="button"><span class="blind">재정용어 검색창 닫기</span></button>
+      </div>
+      <div class="center_form">
+        <form action="#" method="GET">
+          <input type="text" id="terms2" title="재정용어 검색어 입력" placeholder="재정용어를 검색해보세요." autocomplete=off>
+          <button type="button" class="search_btn2"><span class="blind">검색어를 입력하세요</span>검색</button>
+        </form>
+      </div>
+      <div class="bottom_contents">
+        <h3><span></span>에 대한 검색결과 입니다.</h3>
+        <div class="relation_tags"></div>
+        <div class="main_text"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/plugins/prefixfree.min.js"></script>
+  <script src="./js/plugins/jquery.min.js"></script>
+  <script src="./js/plugins/jquery.fullpage.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

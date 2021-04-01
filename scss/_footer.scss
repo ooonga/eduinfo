@@ -1,0 +1,132 @@
+footer {
+  width: 100%;
+  height: 220px;
+  margin: 0 0 180px;
+  li,
+  span,
+  a {
+    color: $colorLight;
+    &:hover {
+      color: $colorLight;
+    }
+  }
+  &.sub_pages {
+    margin: 0;
+  }
+  .footer_rows {
+    width: 100%;
+    padding: 0 120px;
+    border-top: 1px solid $colorBorder;
+  }
+  .f_top {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
+    height: 50px;
+    box-sizing: border-box;
+
+    ul {
+      li {
+        display: block;
+        position: relative;
+        float: left;
+        line-height: 50px;
+        margin-right: 40px;
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: -20px;
+          width: 2px;
+          height: 14px;
+          background: $colorBorder;
+        }
+        &:last-child:after {
+          display: none;
+        }
+      }
+    }
+    .top_btn {
+      position: relative;
+      width: 50px;
+      height: 100%;
+      color: #ffffff;
+      font-size: $f-sizeXSmall;
+      text-align: center;
+      box-sizing: border-box;
+      padding-top: 10px;
+      background: $colorBtn;
+      transition: 0.3s;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: 21px;
+        @include triangle;
+        border-bottom: 5px solid #ffffff;
+      }
+      &:hover {
+        background: $colorHover;
+      }
+    }
+  }
+  .f_bottom {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
+    height: 170px;
+    box-sizing: border-box;
+    .f_logo {
+      width: 119px;
+      height: 47px;
+      background: url("../img/footer/logo.gif") no-repeat center;
+    }
+    .f_text {
+      width: calc(100% - 238px);
+      box-sizing: border-box;
+      padding: 0 0 0 50px;
+      li,
+      span {
+        position: relative;
+        margin: 0 20px;
+        line-height: 22px;
+        font-size: $f-sizeSmall;
+      }
+      span:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: -9px;
+        width: 2px;
+        height: 10px;
+        background: $colorBorder;
+      }
+      span:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: -12px;
+        width: 2px;
+        height: 10px;
+        background: $colorBorder;
+      }
+    }
+    .f_keris {
+      width: 119px;
+      height: 52px;
+      background: url("../img/footer/keris.gif") no-repeat center;
+    }
+  }
+}
+body#sub footer {
+  margin-top: 0;
+}
