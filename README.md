@@ -14,6 +14,6 @@
    -　**jquery API** 활용한 슬라이드 및 이벤트 생성  
    -　**JSON 데이터**로 게시판 생성과 페이징
 
-6. 개별 페이지 링크　<a href="">`MainPage`</a>　<a href="">`SubPage-1`</a>　<a href="">`SubPage-2`</a>　<a href="">`SubPage-3`</a>　<a href="">`SubPage-4`</a>　<a href="">`SubPage-5`</a>　<a href="">`SubPage-6`</a>
+6. 개별 페이지 링크　<a href="http://go0lee.cafe24.com/eduinfo/index.html">`MainPage`</a>　<a href="http://go0lee.cafe24.com/eduinfo/pages/sub01_introduce.html">`SubPage-1`</a>　<a href="http://go0lee.cafe24.com/eduinfo/pages/sub03_schoolChart.html">`SubPage-2`</a>　<a href="http://go0lee.cafe24.com/eduinfo/pages/sub05_data.html">`SubPage-3`</a>　<a href="http://go0lee.cafe24.com/eduinfo/pages/sub05_report.html">`SubPage-4`</a>　<a href="http://go0lee.cafe24.com/eduinfo/pages/sub06_faq.html">`SubPage-5`</a>　<a href="http://go0lee.cafe24.com/eduinfo/pages/join.html">`SubPage-6`</a>
 
 ---
